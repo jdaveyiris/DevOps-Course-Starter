@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}To-Do App{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h1 class="display-4">To-Do App</h1>
+    <p class="lead">Just another to-do app.</p>
+  </div>
+
+  <h1>Add an item below</h1>
+  <form method="post">
+      <label>To Do:
+          <input name="item" autocomplete="on">
+      </label>
+      <button>Save</button>
+  </form>
+
+  {% endblock %}
