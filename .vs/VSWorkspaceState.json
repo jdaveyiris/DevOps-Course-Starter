@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\todo_app"
   ],
+  "SelectedNode": "\\todo_app\\app.py",
   "PreviewInSolutionExplorer": false
 }
