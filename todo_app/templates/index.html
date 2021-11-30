@@ -10,11 +10,11 @@ content %}
     <h2>Items</h2>
     <ul class="list-group mb-4">
       {% for item in items %}
-      <li>
+      <li class="text-primary">
         {{item.status}} - {{item.title}}
         <form method="POST" action='/'>
           <input type="checkbox" value={{item.id}} name="item.id" class="btn btn-primary"/>
-          <label for="item.id">Mark as Done</label>
+          <label class="text-secondary" for="item.id">Mark as Done</label>
       </li>
       {% endfor %}
     </ul>

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}To-Do App{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h1 class="display-4">To-Do App</h1>
+    <p class="lead">Just another to-do app.</p>
+  </div>
+
+  <h1>Remove an item below</h1>
+  <form method="post">
+        <ul class="list-group mb-4">
+            {% for item in items %}
+            <li class="text-primary">
+              {{item.status}} - {{item.title}}
+              <form method="POST" action='/'>
+                <input type="checkbox" value={{item.id}} name="item.id" class="btn btn-primary"/>
+                <label class="text-secondary" for="item.id">Remove Item</label>
+            </li>
+            {% endfor %}
+          </ul>
+      <button>Update List</button>
+  </form>
+
+  {% endblock %}
