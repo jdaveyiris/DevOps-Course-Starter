@@ -50,3 +50,18 @@ You should see output similar to the following:
  * Debugger PIN: 226-556-590
 ```
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
+
+## Trello 
+
+Create a Trello account and API key. 
+We're going to be using Trello's API to fetch 
+and save to-do tasks. In order to call their 
+API, you need to first create an account, then 
+generate an API key and token by following 
+the instructions here:
+https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/
+
+In your .env file set up the following variables:
+TOKEN = {{Trello Token}}
+KEY = {{Trello API Key}}
+BOARD_ID = {{Board Id for To Do App}}
